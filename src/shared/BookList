@@ -1,0 +1,36 @@
+  export let initialBooks = [
+    {
+      id: 1,
+      title: "Dune Messiah",
+      author: "Frank Herbert",
+      genre: "Science Fiction",
+      image: "https://m.media-amazon.com/images/I/817Xh+bqwOL._SL1500_.jpg",
+      read: true,
+    },
+    {
+      id: 2,
+      title: "The Well of Ascension",
+      author: "Brandon Sanderson",
+      image: "https://m.media-amazon.com/images/I/81BEAzy3raL._SL1500_.jpg",
+      genre: "Fantasy",
+      read: true,
+    },
+    {
+      id: 3,
+      title: "Klara and the Sun",
+      author: "Kazuo Ishiguro",
+      image: "https://m.media-amazon.com/images/I/71w6CaOT+cL._SL1500_.jpg",
+      genre: "Literary",
+      read: true,
+    },
+    {
+      id: 4,
+      title: "Lord of Chaos",
+      author: "Robert Jordan",
+      image: "https://m.media-amazon.com/images/I/81GLEgxYU8L._SL1500_.jpg",
+      genre: "Fantasy",
+      read: false
+    }
+  ];
+
+  
