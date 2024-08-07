@@ -73,8 +73,10 @@ body {
     right: 3;
      }
   
-.book-button {
+.book-buttons {
   padding: 10px;
+  text-align: center;
+  
 }
   
 .form-add-book {
@@ -90,6 +92,13 @@ body {
   color: white;
 }
 
+.stats-message {
+  text-align: center;
+  font-weight: 700;
+  padding: 3.2rem 0;
+  font-size: 2.5em;
+}
+
 .genre {
   text-align: center;
   font-weight: 700;
@@ -102,4 +111,9 @@ body {
   text-decoration: wavy;
   font-weight: bold;
   font-size: medium;
+}
+
+.offcanvas {
+  height: auto;
+  width: 400px;
 }

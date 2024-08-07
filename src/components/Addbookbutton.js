@@ -1,8 +1,10 @@
 import { Button } from "react-bootstrap"
 
 
+
 export default function AddBookButton({handleShowAddBook, showAddBook}){
-return <div className="book-button">
-    <Button variant="outline-primary" onClick={handleShowAddBook}>{showAddBook ? "Close" : "Add Book" }</Button>
+    
+return <div className="book-buttons">
+    <Button variant="primary" onClick={handleShowAddBook} size="lg">{showAddBook ? "Close" : "Add to Reading List" }</Button> {""}
     </div>
 }

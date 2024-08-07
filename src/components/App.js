@@ -3,8 +3,8 @@ import AddBook from './AddbookForm'
 import ReadingList from './ReadingList'
 import Header from './header'
 import AddBookButton from './Addbookbutton'
-import Stats from './Stats'
-import GenreBreakdown from './GenreBreakdown'
+import StatButtons from './statButtons'
+
 
 
 const initialBooks = [
@@ -142,10 +142,11 @@ function handleStartedBook(id) {
 
   <Header />
   {showAddBook && <AddBook onAddBook={handleAddBook} />}
-  <AddBookButton handleShowAddBook={handleShowAddBook} showAddBook={showAddBook}/>
+  <AddBookButton handleShowAddBook={handleShowAddBook} showAddBook={showAddBook} books={books}/>
   <ReadingList books={books} onDeleteBook={handleDeleteBook} onReadBook={handleReadBook} onStartedBook={handleStartedBook}/>
-  <Stats books={books}/>
-  <GenreBreakdown books={books} />
+  <StatButtons books={books}/>
+  
+  
   
   </div>
 }

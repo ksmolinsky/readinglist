@@ -13,6 +13,8 @@ export default function AddBook({onAddBook}) {
     if (!author || !title ) return
 
 
+
+
     const newBook = {
       id: Date.now(),
       title,
@@ -30,12 +32,13 @@ export default function AddBook({onAddBook}) {
     setImage("")
   }
 
+
   return (
     // <div className="book-button">
     // <Button variant="outline-primary" size="lg"> Add Book </Button>
     // </div>
 
-    <Form onSubmit={handleSubmit}>
+    <Form onSubmit={handleSubmit} className="mx-3 my-3">
       <Row>
         <Col sm={3} className="my-1">
           <FormLabel>Book Title</FormLabel>
@@ -72,8 +75,8 @@ export default function AddBook({onAddBook}) {
             onChange={(e) => setImage(e.target.value)}
           />
         </Col>
-        <Col xs="auto" className="my-1">
-          <Button type="submit">Add</Button>
+        <Col xs="auto" className="my-3">
+          <Button type="submit" size="lg">Add</Button>
         </Col>
       </Row>
     </Form>
