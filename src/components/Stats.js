@@ -57,7 +57,7 @@ export default function Stats({ books }) {
         >
           <OffcanvasHeader closeButton>
           </OffcanvasHeader>
-          <OffcanvasBody>{`You have read ${numRead} book out of ${numBooks} on your reading list(${percentage}%`}</OffcanvasBody>
+          <OffcanvasBody className="stats-message">{`You have read ${numRead} book out of ${numBooks} on your reading list (${percentage}%)`}</OffcanvasBody>
         </Offcanvas>
       </>
     );
@@ -81,7 +81,7 @@ export default function Stats({ books }) {
         </OffcanvasHeader>
         <OffcanvasBody className="stats-message">
           {percentage === 100
-            ? "You've read your entire list! Add some more books"
+            ? `You've read your entire list! ${numRead} total books`
             : `You have read ${numRead} books out of ${numBooks} on your reading list (${percentage}%)`}
         </OffcanvasBody>
       </Offcanvas>

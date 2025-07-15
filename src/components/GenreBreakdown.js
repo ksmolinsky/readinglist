@@ -10,21 +10,21 @@ const [show, setShow] = useState(false);
 const handleGenreClose = () => setShow(false);
 const handleGenreShow = () => setShow(true);
 
-  const totalFantasy = books.filter((book) =>
-    book.genre.includes("Fantasy")
-  ).length;
-  const totalLiterary = books.filter((book) =>
-    book.genre.includes("Literary")
-  ).length;
-  const totalSciFi = books.filter((book) =>
-    book.genre.includes("Science Fiction")
-  ).length;
-  const totalMystery = books.filter((book) =>
-    book.genre.includes("Mystery")
-  ).length;
-  const totalNonFiction = books.filter((book) =>
-    book.genre.includes("Non-Fiction")
-  ).length;
+const totalFantasy = books.filter((book) =>
+  book.genre.includes("Fantasy")
+).length;
+const totalLiterary = books.filter((book) =>
+  book.genre.includes("Literary")
+).length;
+const totalSciFi = books.filter((book) =>
+  book.genre.includes("Science Fiction")
+).length;
+const totalMystery = books.filter((book) =>
+  book.genre.includes("Mystery")
+).length;
+const totalNonFiction = books.filter((book) =>
+  book.genre.includes("Non-Fiction")
+).length;
 
   const data = [
     ["Genre", "Books in Genre"],
